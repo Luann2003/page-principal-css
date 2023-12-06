@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Libre+Baskerville:ital@0;1&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+:root{
+    --font1: 'Inter', sans-serif;
+    --font2: 'Hind', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font2);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F6F7;
+}
+
+
+header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 95%; 
+    margin: 0 auto;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.345);
+}
+
+#title{
+    margin: 5px;
+    margin-left: 20px;
+}
+
+#title > h1{
+    font-size: 38px;
+    margin-bottom: -17px;
+    margin-left: 100px;
+    font-family: var(--font1);
+}
+li{
+    display: inline-block;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+a{
+    font-size: 20px;
+    color: gray;
+}
+
+a:hover{
+    transition: 0.3s all;
+    color: #FF9331;
+}
+
+#container-prin{
+    margin: 0 auto;
+    background-color: #F5F6F7;
+    width: 95%;
+    height: 350px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.345);
+    display: flex;
+}
+
+#image{
+   width: 50%;
+}
+
+img{
+    width: 440px;
+}
+
+.esp{
+    padding-top: 150px;
+    padding-left: 130px;
+    width: 50%;
+}
+
+.esp > h1{
+    font-size: 50px;
+    width: 10px;
+    font-family: var(--font1);
+}   
+
+.login-button{
+    display: flex;
+    align-items: center;
+   
+}
+
+.login-button button{
+    border: none;
+    background-color: #FF9331;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-button button:hover{
+    text-decoration: none;
+}
+
+.login-button > button > a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#login{
+  margin-right: 100px;
+}
+
+.up-oranged{
+    background-color: #FF9331;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.up-oranged:hover{
+    color: white;
+}
+
+.in-green{
+    background-color: #00A6A4;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.in-green:hover{
+    color: white;
+}
+
