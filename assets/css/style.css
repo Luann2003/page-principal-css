@@ -64,13 +64,14 @@ a:hover{
     margin: 0 auto;
     background-color: #F5F6F7;
     width: 95%;
-    height: 350px;
+    height: 400px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.345);
     display: flex;
 }
 
 #image{
    width: 50%;
+   margin-left: 350px;
 }
 
 img{
@@ -79,19 +80,24 @@ img{
 
 .esp{
     padding-top: 150px;
-    padding-left: 130px;
+    padding-left: 200px;
     width: 50%;
 }
 
 .esp > h1{
-    font-size: 50px;
+    font-size: 60px;
     width: 10px;
     font-family: var(--font1);
 }   
 
+.esp > p {
+    font-size: 16px;
+}
+
 .login-button{
     display: flex;
     align-items: center;
+    margin-top: 15px;
    
 }
 
@@ -140,4 +146,48 @@ img{
 .in-green:hover{
     color: white;
 }
+
+#container{
+    margin: 0 auto;
+    background-color: white;
+    width: 95%;
+    height: 100%;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.345);
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont1{
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.345);
+    border-radius: 0px 0px 15px 15px;
+    width: 350px;
+    height: 200px; 
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.icon{
+    width: 100px;
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+.cont1:after{
+    content: '';
+    display: block;
+    width: 350px;
+    height: 0.3rem;
+    background-color: #00A6A4;
+    position: absolute;
+    top: -0.35rem; /* Ajusta a posição para acima da div .cont1 */
+    left: 50%; /* Coloca o elemento no centro horizontal */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    border-radius: 15px 15px 0px 0px;
+}
+
+
 
