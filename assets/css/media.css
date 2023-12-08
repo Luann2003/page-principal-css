@@ -1,0 +1,123 @@
+@media screen and (max-width:1300px) {
+    #container-prin {
+        margin: 0 auto;
+        background-color: #F5F6F7;
+        width: 95%;
+        height: 400px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.345);
+        display: flex;
+        align-items: center;
+
+    }
+
+    .esp {
+        padding-top: 105px;
+        padding-left: 85px;
+        align-items: last baseline;
+
+    }
+
+    .esp>h1 {
+        font-size: 60px;
+        width: 10px;
+        font-family: var(--font1);
+    }
+
+    img {
+        width: 340px;
+    }
+
+    #image {
+        margin-left: 100px;
+
+    }
+}
+
+@media screen and (max-width:1040px) {
+
+    header>nav>ul>a {
+        display: none;
+    }
+
+    .esp{
+      padding-top: 0px;
+    }
+    
+    #container{
+        margin: 0 auto;
+        background-color: white;
+        width: 95%;
+        height: 100%;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.345);
+        display: block;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .cont1{
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 250px;
+        height: 170px;
+    }
+
+    .icon{
+        width: 50px;
+    }
+
+    .cont1:after{
+        margin-top: 5px;
+        content: '';
+        display: block;
+        width: 250px;
+        height: 0.3rem;
+        background-color: #00A6A4;
+        position: absolute;
+        top: -0.35rem; /* Ajusta a posição para acima da div .cont1 */
+        left: 50%; /* Coloca o elemento no centro horizontal */
+        transform: translateX(-50%); /* Centraliza horizontalmente */
+        border-radius: 15px 15px 0px 0px;
+    }
+}
+
+@media screen and (max-width:765px) {
+
+    .esp>h1 { 
+        font-size: 45px;
+        width: 10px;
+        font-family: var(--font1);
+    }
+
+    .esp{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #image {
+        display: none;
+    }
+}
+
+@media screen and (max-width:580px) {
+
+    #login {
+        margin: 0px;
+    }
+
+    .up-oranged{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .in-green{
+        background-color: #00A6A4;
+        color: white;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+
+    #login > nav > ul > a > li {
+        
+    }
+
+}
