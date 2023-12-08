@@ -17,7 +17,7 @@
 
     }
 
-    .esp>h1 {
+    .esp > h1 {
         font-size: 60px;
         width: 10px;
         font-family: var(--font1);
@@ -29,11 +29,115 @@
 
     #image {
         margin-left: 100px;
-
     }
 }
 
-@media screen and (max-width:1040px) {
+@media screen and (max-width:1043px) {
+
+    #menu {
+        z-index: 2;
+      }
+
+    #nav > ul > li{
+        display: block;
+        margin: 0px;
+      }
+
+     #nav > ul > li > a:hover{
+        transition: 0.3s all;
+       font-weight: bold;
+    }
+
+      #menu-bar {
+        width: 45px;
+        height: 40px;
+        margin: 30px 0 20px 20px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      
+      .bar {
+        height: 5px;
+        width: 100%;
+        background-color: black;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+      }
+      
+      #bar1 {
+        transform: translateY(-4px);
+      }
+      
+      #bar3 {
+        transform: translateY(4px);
+      }
+      
+      .nav {
+        transition: 0.3s ease;
+        display: none;
+      }
+      
+      .nav ul {
+        padding: 0 22px;
+      }
+      
+      .nav li {
+        list-style: none;
+        padding: 12px 0;
+      }
+      
+      .nav li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      
+      .nav li a:hover {
+        font-weight: bold;
+      }
+      
+      .menu-bg, #menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+      
+      .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 30px 0 20px 20px;
+        background: radial-gradient(circle, #00A6A4, #00A6A4);
+        border-radius: 50%;
+        transition: 0.3s ease;
+      }
+      
+      .change {
+        display: block;
+      }
+      
+      .change .bar {
+        background-color: white;
+      }
+      
+      .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+      }
+      
+      .change #bar2 {
+        opacity: 0;
+      }
+      
+      .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+      }
+      
+      .change-bg {
+        width: 520px;
+        height: 460px;
+        transform: translate(-60%,-30%);
+      }
 
     header>nav>ul>a {
         display: none;
@@ -65,7 +169,7 @@
         width: 50px;
     }
 
-    .cont1:after{
+    .cont1:after{   
         margin-top: 5px;
         content: '';
         display: block;
@@ -115,9 +219,4 @@
         border-radius: 8px;
         font-size: 15px;
     }
-
-    #login > nav > ul > a > li {
-        
-    }
-
 }

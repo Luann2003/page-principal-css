@@ -6,6 +6,7 @@
     <title>Site</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <script src="action.js"></script>
 </head>
 <body>
    <header>
@@ -13,15 +14,24 @@
             <h1>Software</h1>
             <h1>Testing</h1>
         </div>
-        <nav>
-            <ul>
-                <a href="#"><li>Home</li></a>
-                <a href=""><li>About</li></a>
-                <a href="#"><li>Lonas</li></a>
-                <a href="#"><li>Investing</li></a>
-                <a href="#"><li>Suport</li></a>
-            </ul>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </nav> 
+          </div>
         </nav>
+     
+          <div class="menu-bg" id="menu-bg"></div>
         <div id="login">
             <nav>
                 <ul>
@@ -38,7 +48,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea maiores repudiandae quae voluptas. Amet obcaecati placeat, excepturi!</p>
                 <div class="login-button">
                     <button>
-                      <a href="#">Sing up Free</a>
+                          <a href="#">Sing up Free</a>
                   </button>
                 </div>
             </div>
